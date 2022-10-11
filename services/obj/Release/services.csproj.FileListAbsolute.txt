@@ -1,0 +1,9 @@
+C:\Users\miamu\OneDrive\Documents\GitHub\mpp-proiect-repository-claudiamunteanu\Lab11\Pb2-CSharp\services\bin\Release\services.dll
+C:\Users\miamu\OneDrive\Documents\GitHub\mpp-proiect-repository-claudiamunteanu\Lab11\Pb2-CSharp\services\bin\Release\services.pdb
+C:\Users\miamu\OneDrive\Documents\GitHub\mpp-proiect-repository-claudiamunteanu\Lab11\Pb2-CSharp\services\bin\Release\model.dll
+C:\Users\miamu\OneDrive\Documents\GitHub\mpp-proiect-repository-claudiamunteanu\Lab11\Pb2-CSharp\services\bin\Release\model.pdb
+C:\Users\miamu\OneDrive\Documents\GitHub\mpp-proiect-repository-claudiamunteanu\Lab11\Pb2-CSharp\services\obj\Release\services.csproj.AssemblyReference.cache
+C:\Users\miamu\OneDrive\Documents\GitHub\mpp-proiect-repository-claudiamunteanu\Lab11\Pb2-CSharp\services\obj\Release\services.csproj.CoreCompileInputs.cache
+C:\Users\miamu\OneDrive\Documents\GitHub\mpp-proiect-repository-claudiamunteanu\Lab11\Pb2-CSharp\services\obj\Release\services.csproj.CopyComplete
+C:\Users\miamu\OneDrive\Documents\GitHub\mpp-proiect-repository-claudiamunteanu\Lab11\Pb2-CSharp\services\obj\Release\services.dll
+C:\Users\miamu\OneDrive\Documents\GitHub\mpp-proiect-repository-claudiamunteanu\Lab11\Pb2-CSharp\services\obj\Release\services.pdb

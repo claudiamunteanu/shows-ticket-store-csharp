@@ -1,0 +1,13 @@
+﻿# Default ignored files
+/shelf/
+/workspace.xml
+# Rider ignored files
+/contentModel.xml
+/.idea.Pb2-CSharp.iml
+/modules.xml
+/projectSettingsUpdater.xml
+# Datasource local storage ignored files
+/../../../../../../../../../../../../../../:\Users\miamu\OneDrive\Desktop\Facultate\Semestrul4\MPP\Laboratoare\mpp-proiect-repository-claudiamunteanu\Pb2-CSharp\.idea\.idea.Pb2-CSharp\.idea/dataSources/
+/dataSources.local.xml
+# Editor-based HTTP Client requests
+/httpRequests/
