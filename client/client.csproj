@@ -81,6 +81,12 @@
     <EmbeddedResource Include="forms\MainWindow.resx">
       <DependentUpon>MainWindow.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="forms\NewUserWindow.resx">
+      <DependentUpon>NewUserWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\WelcomeWindow.resx">
+      <DependentUpon>WelcomeWindow.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

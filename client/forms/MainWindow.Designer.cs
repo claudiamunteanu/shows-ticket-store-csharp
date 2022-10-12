@@ -64,17 +64,19 @@ namespace app.client.forms
             // dateTimePicker
             // 
             this.dateTimePicker.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
-            this.dateTimePicker.Location = new System.Drawing.Point(12, 335);
+            this.dateTimePicker.Location = new System.Drawing.Point(8, 223);
+            this.dateTimePicker.Margin = new System.Windows.Forms.Padding(2);
             this.dateTimePicker.Name = "dateTimePicker";
-            this.dateTimePicker.Size = new System.Drawing.Size(240, 30);
+            this.dateTimePicker.Size = new System.Drawing.Size(161, 23);
             this.dateTimePicker.TabIndex = 1;
             // 
             // btnSearchShows
             // 
             this.btnSearchShows.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
-            this.btnSearchShows.Location = new System.Drawing.Point(285, 335);
+            this.btnSearchShows.Location = new System.Drawing.Point(190, 223);
+            this.btnSearchShows.Margin = new System.Windows.Forms.Padding(2);
             this.btnSearchShows.Name = "btnSearchShows";
-            this.btnSearchShows.Size = new System.Drawing.Size(145, 41);
+            this.btnSearchShows.Size = new System.Drawing.Size(97, 27);
             this.btnSearchShows.TabIndex = 2;
             this.btnSearchShows.Text = "Search shows";
             this.btnSearchShows.UseVisualStyleBackColor = true;
@@ -82,10 +84,12 @@ namespace app.client.forms
             // 
             // btnLogout
             // 
+            this.btnLogout.Anchor = ((System.Windows.Forms.AnchorStyles) (((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right)));
             this.btnLogout.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
-            this.btnLogout.Location = new System.Drawing.Point(1111, 331);
+            this.btnLogout.Location = new System.Drawing.Point(1050, 235);
+            this.btnLogout.Margin = new System.Windows.Forms.Padding(2);
             this.btnLogout.Name = "btnLogout";
-            this.btnLogout.Size = new System.Drawing.Size(115, 48);
+            this.btnLogout.Size = new System.Drawing.Size(77, 32);
             this.btnLogout.TabIndex = 3;
             this.btnLogout.Text = "Logout";
             this.btnLogout.UseVisualStyleBackColor = true;
@@ -97,6 +101,7 @@ namespace app.client.forms
             this.dataGridViewShows.AllowUserToDeleteRows = false;
             this.dataGridViewShows.AllowUserToResizeColumns = false;
             this.dataGridViewShows.AllowUserToResizeRows = false;
+            this.dataGridViewShows.Anchor = ((System.Windows.Forms.AnchorStyles) (((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridViewShows.BackgroundColor = System.Drawing.SystemColors.Window;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
@@ -116,13 +121,14 @@ namespace app.client.forms
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dataGridViewShows.DefaultCellStyle = dataGridViewCellStyle2;
-            this.dataGridViewShows.Location = new System.Drawing.Point(12, 12);
+            this.dataGridViewShows.Location = new System.Drawing.Point(8, 8);
+            this.dataGridViewShows.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridViewShows.Name = "dataGridViewShows";
             this.dataGridViewShows.ReadOnly = true;
             this.dataGridViewShows.RowHeadersWidth = 62;
             this.dataGridViewShows.RowTemplate.Height = 28;
             this.dataGridViewShows.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridViewShows.Size = new System.Drawing.Size(1214, 308);
+            this.dataGridViewShows.Size = new System.Drawing.Size(1119, 205);
             this.dataGridViewShows.TabIndex = 4;
             this.dataGridViewShows.TabStop = false;
             // 
@@ -170,9 +176,10 @@ namespace app.client.forms
             // 
             this.labelTitle.AutoSize = true;
             this.labelTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
-            this.labelTitle.Location = new System.Drawing.Point(350, 417);
+            this.labelTitle.Location = new System.Drawing.Point(233, 278);
+            this.labelTitle.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelTitle.Name = "labelTitle";
-            this.labelTitle.Size = new System.Drawing.Size(0, 46);
+            this.labelTitle.Size = new System.Drawing.Size(0, 31);
             this.labelTitle.TabIndex = 7;
             // 
             // dataGridViewFilteredShows
@@ -198,13 +205,14 @@ namespace app.client.forms
             dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dataGridViewFilteredShows.DefaultCellStyle = dataGridViewCellStyle4;
-            this.dataGridViewFilteredShows.Location = new System.Drawing.Point(12, 499);
+            this.dataGridViewFilteredShows.Location = new System.Drawing.Point(8, 333);
+            this.dataGridViewFilteredShows.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridViewFilteredShows.Name = "dataGridViewFilteredShows";
             this.dataGridViewFilteredShows.ReadOnly = true;
             this.dataGridViewFilteredShows.RowHeadersWidth = 62;
             this.dataGridViewFilteredShows.RowTemplate.Height = 28;
             this.dataGridViewFilteredShows.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridViewFilteredShows.Size = new System.Drawing.Size(810, 375);
+            this.dataGridViewFilteredShows.Size = new System.Drawing.Size(838, 250);
             this.dataGridViewFilteredShows.TabIndex = 0;
             this.dataGridViewFilteredShows.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewFilteredShows_CellClick);
             this.dataGridViewFilteredShows.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.dataGridViewFilteredShows_CellFormating);
@@ -264,27 +272,32 @@ namespace app.client.forms
             // 
             this.labelBuyerName.AutoSize = true;
             this.labelBuyerName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
-            this.labelBuyerName.Location = new System.Drawing.Point(828, 567);
+            this.labelBuyerName.Location = new System.Drawing.Point(850, 378);
+            this.labelBuyerName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelBuyerName.Name = "labelBuyerName";
-            this.labelBuyerName.Size = new System.Drawing.Size(146, 29);
+            this.labelBuyerName.Size = new System.Drawing.Size(96, 20);
             this.labelBuyerName.TabIndex = 2;
             this.labelBuyerName.Text = "Buyer Name";
             // 
             // textBoxBuyerName
             // 
+            this.textBoxBuyerName.Anchor = ((System.Windows.Forms.AnchorStyles) (((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right)));
             this.textBoxBuyerName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
-            this.textBoxBuyerName.Location = new System.Drawing.Point(992, 564);
+            this.textBoxBuyerName.Location = new System.Drawing.Point(970, 372);
+            this.textBoxBuyerName.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxBuyerName.Name = "textBoxBuyerName";
-            this.textBoxBuyerName.Size = new System.Drawing.Size(234, 35);
+            this.textBoxBuyerName.Size = new System.Drawing.Size(157, 26);
             this.textBoxBuyerName.TabIndex = 1;
             // 
             // numericUpDownNoOfSeats
             // 
+            this.numericUpDownNoOfSeats.Anchor = ((System.Windows.Forms.AnchorStyles) (((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right)));
             this.numericUpDownNoOfSeats.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
-            this.numericUpDownNoOfSeats.Location = new System.Drawing.Point(1040, 653);
+            this.numericUpDownNoOfSeats.Location = new System.Drawing.Point(1033, 435);
+            this.numericUpDownNoOfSeats.Margin = new System.Windows.Forms.Padding(2);
             this.numericUpDownNoOfSeats.Minimum = new decimal(new int[] {1, 0, 0, 0});
             this.numericUpDownNoOfSeats.Name = "numericUpDownNoOfSeats";
-            this.numericUpDownNoOfSeats.Size = new System.Drawing.Size(141, 30);
+            this.numericUpDownNoOfSeats.Size = new System.Drawing.Size(94, 23);
             this.numericUpDownNoOfSeats.TabIndex = 3;
             this.numericUpDownNoOfSeats.Value = new decimal(new int[] {1, 0, 0, 0});
             // 
@@ -292,9 +305,10 @@ namespace app.client.forms
             // 
             this.labelNoOfSeats.AutoSize = true;
             this.labelNoOfSeats.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
-            this.labelNoOfSeats.Location = new System.Drawing.Point(828, 652);
+            this.labelNoOfSeats.Location = new System.Drawing.Point(850, 434);
+            this.labelNoOfSeats.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelNoOfSeats.Name = "labelNoOfSeats";
-            this.labelNoOfSeats.Size = new System.Drawing.Size(149, 29);
+            this.labelNoOfSeats.Size = new System.Drawing.Size(100, 20);
             this.labelNoOfSeats.TabIndex = 4;
             this.labelNoOfSeats.Text = "No. Of Seats";
             // 
@@ -302,17 +316,20 @@ namespace app.client.forms
             // 
             this.labelErrors.AutoSize = true;
             this.labelErrors.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
-            this.labelErrors.Location = new System.Drawing.Point(828, 724);
+            this.labelErrors.Location = new System.Drawing.Point(552, 483);
+            this.labelErrors.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelErrors.Name = "labelErrors";
-            this.labelErrors.Size = new System.Drawing.Size(0, 25);
+            this.labelErrors.Size = new System.Drawing.Size(0, 17);
             this.labelErrors.TabIndex = 8;
             // 
             // btnBuyTicket
             // 
+            this.btnBuyTicket.Anchor = ((System.Windows.Forms.AnchorStyles) (((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right)));
             this.btnBuyTicket.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
-            this.btnBuyTicket.Location = new System.Drawing.Point(963, 779);
+            this.btnBuyTicket.Location = new System.Drawing.Point(1035, 497);
+            this.btnBuyTicket.Margin = new System.Windows.Forms.Padding(2);
             this.btnBuyTicket.Name = "btnBuyTicket";
-            this.btnBuyTicket.Size = new System.Drawing.Size(138, 56);
+            this.btnBuyTicket.Size = new System.Drawing.Size(92, 37);
             this.btnBuyTicket.TabIndex = 5;
             this.btnBuyTicket.Text = "Buy Ticket";
             this.btnBuyTicket.UseVisualStyleBackColor = true;
@@ -320,9 +337,9 @@ namespace app.client.forms
             // 
             // MainWindow
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
-            this.ClientSize = new System.Drawing.Size(1238, 894);
+            this.ClientSize = new System.Drawing.Size(1138, 596);
             this.Controls.Add(this.labelErrors);
             this.Controls.Add(this.btnBuyTicket);
             this.Controls.Add(this.dataGridViewShows);
@@ -335,6 +352,7 @@ namespace app.client.forms
             this.Controls.Add(this.textBoxBuyerName);
             this.Controls.Add(this.labelBuyerName);
             this.Controls.Add(this.dataGridViewFilteredShows);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "MainWindow";
             this.Text = "MainWindow";
             ((System.ComponentModel.ISupportInitialize) (this.dataGridViewShows)).EndInit();

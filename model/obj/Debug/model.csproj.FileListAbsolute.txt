@@ -22,3 +22,9 @@ C:\Users\miamu\OneDrive\Desktop\Facultate\Semestrul4\MPP\Laboratoare\mpp-proiect
 C:\Users\miamu\OneDrive\Desktop\Facultate\Semestrul4\MPP\Laboratoare\mpp-proiect-repository-claudiamunteanu\Lab11\Pb2-CSharp\model\obj\Debug\model.csproj.CoreCompileInputs.cache
 C:\Users\miamu\OneDrive\Desktop\Facultate\Semestrul4\MPP\Laboratoare\mpp-proiect-repository-claudiamunteanu\Lab11\Pb2-CSharp\model\obj\Debug\model.dll
 C:\Users\miamu\OneDrive\Desktop\Facultate\Semestrul4\MPP\Laboratoare\mpp-proiect-repository-claudiamunteanu\Lab11\Pb2-CSharp\model\obj\Debug\model.pdb
+C:\Users\miamu\OneDrive\Documents\GitHub\shows-ticket-store-csharp\model\bin\Debug\model.dll
+C:\Users\miamu\OneDrive\Documents\GitHub\shows-ticket-store-csharp\model\bin\Debug\model.pdb
+C:\Users\miamu\OneDrive\Documents\GitHub\shows-ticket-store-csharp\model\obj\Debug\model.csproj.AssemblyReference.cache
+C:\Users\miamu\OneDrive\Documents\GitHub\shows-ticket-store-csharp\model\obj\Debug\model.csproj.CoreCompileInputs.cache
+C:\Users\miamu\OneDrive\Documents\GitHub\shows-ticket-store-csharp\model\obj\Debug\model.dll
+C:\Users\miamu\OneDrive\Documents\GitHub\shows-ticket-store-csharp\model\obj\Debug\model.pdb

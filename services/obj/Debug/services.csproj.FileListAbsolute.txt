@@ -33,3 +33,12 @@ C:\Users\miamu\OneDrive\Documents\GitHub\mpp-proiect-repository-claudiamunteanu\
 C:\Users\miamu\OneDrive\Documents\GitHub\mpp-proiect-repository-claudiamunteanu\Lab11\Pb2-CSharp\services\obj\Debug\services.csproj.CoreCompileInputs.cache
 C:\Users\miamu\OneDrive\Documents\GitHub\mpp-proiect-repository-claudiamunteanu\Lab11\Pb2-CSharp\services\obj\Debug\services.dll
 C:\Users\miamu\OneDrive\Documents\GitHub\mpp-proiect-repository-claudiamunteanu\Lab11\Pb2-CSharp\services\obj\Debug\services.pdb
+C:\Users\miamu\OneDrive\Documents\GitHub\shows-ticket-store-csharp\services\bin\Debug\services.dll
+C:\Users\miamu\OneDrive\Documents\GitHub\shows-ticket-store-csharp\services\bin\Debug\services.pdb
+C:\Users\miamu\OneDrive\Documents\GitHub\shows-ticket-store-csharp\services\bin\Debug\model.dll
+C:\Users\miamu\OneDrive\Documents\GitHub\shows-ticket-store-csharp\services\bin\Debug\model.pdb
+C:\Users\miamu\OneDrive\Documents\GitHub\shows-ticket-store-csharp\services\obj\Debug\services.csproj.AssemblyReference.cache
+C:\Users\miamu\OneDrive\Documents\GitHub\shows-ticket-store-csharp\services\obj\Debug\services.csproj.CoreCompileInputs.cache
+C:\Users\miamu\OneDrive\Documents\GitHub\shows-ticket-store-csharp\services\obj\Debug\services.csproj.CopyComplete
+C:\Users\miamu\OneDrive\Documents\GitHub\shows-ticket-store-csharp\services\obj\Debug\services.dll
+C:\Users\miamu\OneDrive\Documents\GitHub\shows-ticket-store-csharp\services\obj\Debug\services.pdb

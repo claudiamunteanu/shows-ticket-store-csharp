@@ -38,18 +38,20 @@ namespace app.client.forms
             // 
             this.labelTitle.AutoSize = true;
             this.labelTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTitle.Location = new System.Drawing.Point(159, 66);
+            this.labelTitle.Location = new System.Drawing.Point(106, 43);
+            this.labelTitle.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelTitle.Name = "labelTitle";
-            this.labelTitle.Size = new System.Drawing.Size(237, 55);
+            this.labelTitle.Size = new System.Drawing.Size(159, 37);
             this.labelTitle.TabIndex = 0;
             this.labelTitle.Text = "Welcome!";
             // 
             // btnLogin
             // 
             this.btnLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLogin.Location = new System.Drawing.Point(69, 231);
+            this.btnLogin.Location = new System.Drawing.Point(46, 150);
+            this.btnLogin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(161, 67);
+            this.btnLogin.Size = new System.Drawing.Size(107, 44);
             this.btnLogin.TabIndex = 1;
             this.btnLogin.Text = "Login";
             this.btnLogin.UseVisualStyleBackColor = true;
@@ -57,24 +59,26 @@ namespace app.client.forms
             // 
             // btnNewUser
             // 
-            this.btnNewUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNewUser.Location = new System.Drawing.Point(321, 231);
+            this.btnNewUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNewUser.Location = new System.Drawing.Point(214, 150);
+            this.btnNewUser.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnNewUser.Name = "btnNewUser";
-            this.btnNewUser.Size = new System.Drawing.Size(167, 67);
+            this.btnNewUser.Size = new System.Drawing.Size(111, 44);
             this.btnNewUser.TabIndex = 2;
             this.btnNewUser.Text = "New User";
             this.btnNewUser.UseVisualStyleBackColor = true;
             this.btnNewUser.Click += new System.EventHandler(this.btnNewUser_Click);
             // 
-            // Welcome
+            // WelcomeWindow
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(551, 362);
+            this.ClientSize = new System.Drawing.Size(367, 235);
             this.Controls.Add(this.btnNewUser);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.labelTitle);
-            this.Name = "Welcome";
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Name = "WelcomeWindow";
             this.Text = "Welcome";
             this.ResumeLayout(false);
             this.PerformLayout();
