@@ -51,7 +51,8 @@ namespace app.persistence
             User user = null;
             using (var cmd = con.CreateCommand())
             {
-                cmd.CommandText = "SELECT * FROM Users WHERE Uid=" + id + ";";
+                cmd.CommandText = "SELECT * FROM Users WHERE Uid=@uid;";
+                cmd.Parameters.Add(new SQLiteParameter("@uid", id));
                 using (var reader = cmd.ExecuteReader())
                 {
                     if (reader.Read())
@@ -77,7 +78,9 @@ namespace app.persistence
             User user = null;
             using (var cmd = con.CreateCommand())
             {
-                cmd.CommandText = "SELECT * FROM Users WHERE Username='" + username + "' and Password='" + password + "';";
+                cmd.CommandText = "SELECT * FROM Users WHERE Username=@username and Password=@password;";
+                cmd.Parameters.Add(new SQLiteParameter("@username", username));
+                cmd.Parameters.Add(new SQLiteParameter("@password", password));
                 using (var reader = cmd.ExecuteReader())
                 {
                     if (reader.Read())
@@ -105,17 +108,8 @@ namespace app.persistence
                 using (var cmd = con.CreateCommand())
                 {
                     cmd.CommandText = "INSERT INTO Users (Username, Password) VALUES (@username, @password);";
-
-                    var paramUsername = cmd.CreateParameter();
-                    paramUsername.ParameterName = "@username";
-                    paramUsername.Value = entity.Username;
-                    cmd.Parameters.Add(paramUsername);
-
-
-                    var paramPassword = cmd.CreateParameter();
-                    paramPassword.ParameterName = "@password";
-                    paramPassword.Value = entity.Password;
-                    cmd.Parameters.Add(paramPassword);
+                    cmd.Parameters.Add(new SQLiteParameter("@username", entity.Username));
+                    cmd.Parameters.Add(new SQLiteParameter("@password", entity.Password));
 
                     cmd.ExecuteNonQuery();
                 }

@@ -26,7 +26,8 @@ namespace app.persistence
             List<Show> shows = new List<Show> { };
             using (var cmd = con.CreateCommand())
             {
-                cmd.CommandText = "SELECT * FROM Shows where date(DateTime/1000, 'unixepoch')='" + date.ToString("yyyy-MM-dd") + "'";
+                cmd.CommandText = "SELECT s.Sid, s.ArtistName, datetime(s.DateTime / 1000, 'unixepoch') as NewDateTime, s.Place, s.AvailableSeats, s.SoldSeats FROM Shows s where date(NewDateTime)=@datetime;";
+                cmd.Parameters.Add(new SQLiteParameter("@datetime", date.ToString("yyyy-MM-dd")));
                 using (var reader = cmd.ExecuteReader())
                 {
                     while (reader.Read())
@@ -34,9 +35,7 @@ namespace app.persistence
                         long sid = long.Parse(reader["Sid"].ToString());
                         String artistName = reader["ArtistName"].ToString();
 
-                        long milliseconds = long.Parse(reader["DateTime"].ToString());
-                        DateTimeOffset dateTimeOffset = DateTimeOffset.FromUnixTimeMilliseconds(milliseconds);
-                        DateTime dateTime = dateTimeOffset.DateTime;
+                        DateTime dateTime = DateTime.Parse(reader["NewDateTime"].ToString());
 
                         String place = reader["Place"].ToString();
                         int availableSeats = int.Parse(reader["AvailableSeats"].ToString());
@@ -61,7 +60,7 @@ namespace app.persistence
             List<Show> shows = new List<Show> { };
             using (var cmd = con.CreateCommand())
             {
-                cmd.CommandText = "SELECT * FROM Shows";
+                cmd.CommandText = "SELECT s.Sid, s.ArtistName, datetime(s.DateTime / 1000, 'unixepoch') as DateTime, s.Place, s.AvailableSeats, s.SoldSeats FROM Shows s";
                 using (var reader = cmd.ExecuteReader())
                 {
                     while (reader.Read())
@@ -69,10 +68,7 @@ namespace app.persistence
                         long sid = long.Parse(reader["Sid"].ToString());
                         String artistName = reader["ArtistName"].ToString();
 
-                        String dateTimeString = reader["DateTime"].ToString();
-                        long milliseconds = long.Parse(dateTimeString);
-                        DateTimeOffset dateTimeOffset = DateTimeOffset.FromUnixTimeMilliseconds(milliseconds);
-                        DateTime date = dateTimeOffset.DateTime;
+                        DateTime date = DateTime.Parse(reader["DateTime"].ToString());
 
                         String place = reader["Place"].ToString();
                         int availableSeats = int.Parse(reader["AvailableSeats"].ToString());
@@ -97,7 +93,8 @@ namespace app.persistence
             Show show = null;
             using (var cmd = con.CreateCommand())
             {
-                cmd.CommandText = "SELECT * FROM Shows WHERE Sid=" + id + ";";
+                cmd.CommandText = "SELECT s.Sid, s.ArtistName, datetime(s.DateTime / 1000, 'unixepoch') as DateTime, s.Place, s.AvailableSeats, s.SoldSeats FROM Shows s WHERE s.Sid=@sid;";
+                cmd.Parameters.Add(new SQLiteParameter("@sid", id));
                 using (var reader = cmd.ExecuteReader())
                 {
                     if (reader.Read())
@@ -105,9 +102,7 @@ namespace app.persistence
                         long sid = long.Parse(reader["Sid"].ToString());
                         String artistName = reader["ArtistName"].ToString();
 
-                        long milliseconds = long.Parse(reader["DateTime"].ToString());
-                        DateTimeOffset dateTimeOffset = DateTimeOffset.FromUnixTimeMilliseconds(milliseconds);
-                        DateTime date = dateTimeOffset.DateTime;
+                        DateTime date = DateTime.Parse(reader["DateTime"].ToString());
 
                         String place = reader["Place"].ToString();
                         int availableSeats = int.Parse(reader["AvailableSeats"].ToString());
@@ -135,35 +130,16 @@ namespace app.persistence
                 {
                     cmd.CommandText = "INSERT INTO Shows (ArtistName, DateTime, Place, AvailableSeats, SoldSeats) VALUES (@a, @d, @p, @as, @ss);";
 
-                    var paramArtistName = cmd.CreateParameter();
-                    paramArtistName.ParameterName = "@a";
-                    paramArtistName.Value = entity.ArtistName;
-                    cmd.Parameters.Add(paramArtistName);
-
                     DateTime dateTime = entity.DateTime;
                     dateTime = DateTime.SpecifyKind(dateTime, DateTimeKind.Utc);
                     DateTimeOffset dateTimeOffset = dateTime;
                     long unixtime = dateTimeOffset.ToUnixTimeMilliseconds();
 
-                    var paramDateTime = cmd.CreateParameter();
-                    paramDateTime.ParameterName = "@d";
-                    paramDateTime.Value = unixtime;
-                    cmd.Parameters.Add(paramDateTime);
-
-                    var paramPlace = cmd.CreateParameter();
-                    paramPlace.ParameterName = "@p";
-                    paramPlace.Value = entity.Place;
-                    cmd.Parameters.Add(paramPlace);
-
-                    var paramAvailableSeats = cmd.CreateParameter();
-                    paramAvailableSeats.ParameterName = "@as";
-                    paramAvailableSeats.Value = entity.AvailableSeats;
-                    cmd.Parameters.Add(paramAvailableSeats);
-
-                    var paramSoldSeats = cmd.CreateParameter();
-                    paramSoldSeats.ParameterName = "@ss";
-                    paramSoldSeats.Value = entity.SoldSeats;
-                    cmd.Parameters.Add(paramSoldSeats);
+                    cmd.Parameters.Add(new SQLiteParameter("@a", entity.ArtistName));
+                    cmd.Parameters.Add(new SQLiteParameter("@d", unixtime));
+                    cmd.Parameters.Add(new SQLiteParameter("@p", entity.Place));
+                    cmd.Parameters.Add(new SQLiteParameter("@as", entity.AvailableSeats));
+                    cmd.Parameters.Add(new SQLiteParameter("@ss", entity.SoldSeats));
 
                     cmd.ExecuteNonQuery(); ;
                 }
@@ -187,12 +163,9 @@ namespace app.persistence
             {
                 using (var cmd = con.CreateCommand())
                 {
-                    cmd.CommandText = "update Shows set AvailableSeats=AvailableSeats-@seats, SoldSeats=SoldSeats+@seats where Sid=" + id + ";";
-
-                    var paramSeats = cmd.CreateParameter();
-                    paramSeats.ParameterName = "@seats";
-                    paramSeats.Value = noOfSeats;
-                    cmd.Parameters.Add(paramSeats);
+                    cmd.CommandText = "update Shows set AvailableSeats=AvailableSeats-@seats, SoldSeats=SoldSeats+@seats where Sid=@sid;";
+                    cmd.Parameters.Add(new SQLiteParameter("@seats", noOfSeats));
+                    cmd.Parameters.Add(new SQLiteParameter("@sid", id));
 
                     cmd.ExecuteNonQuery();
                 }
