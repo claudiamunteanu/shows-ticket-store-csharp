@@ -204,16 +204,16 @@ Project Link: [https://github.com/claudiamunteanu/shows-tickets-store-java](http
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/claudiamunteanu/shows-tickets-store-csharp.svg?style=for-the-badge
-[contributors-url]: https://github.com/claudiamunteanu/shows-tickets-store-csharp/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/claudiamunteanu/shows-tickets-store-csharp.svg?style=for-the-badge
-[forks-url]: https://github.com/claudiamunteanu/shows-tickets-store-csharp/network/members
-[stars-shield]: https://img.shields.io/github/stars/claudiamunteanu/shows-tickets-store-csharp.svg?style=for-the-badge
-[stars-url]: https://github.com/claudiamunteanu/shows-tickets-store-csharp/stargazers
-[issues-shield]: https://img.shields.io/github/issues/claudiamunteanu/shows-tickets-store-csharp.svg?style=for-the-badge
-[issues-url]: https://github.com/claudiamunteanu/shows-tickets-store-csharp/issues
-[license-shield]: https://img.shields.io/github/license/claudiamunteanu/shows-tickets-store-csharp.svg?style=for-the-badge
-[license-url]: https://github.com/claudiamunteanu/shows-tickets-store-csharp/blob/master/LICENSE
+[contributors-shield]: https://img.shields.io/github/contributors/claudiamunteanu/shows-ticket-store-csharp.svg?style=for-the-badge
+[contributors-url]: https://github.com/claudiamunteanu/shows-ticket-store-csharp/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/claudiamunteanu/shows-ticket-store-csharp.svg?style=for-the-badge
+[forks-url]: https://github.com/claudiamunteanu/shows-ticket-store-csharp/network/members
+[stars-shield]: https://img.shields.io/github/stars/claudiamunteanu/shows-ticket-store-csharp.svg?style=for-the-badge
+[stars-url]: https://github.com/claudiamunteanu/shows-ticket-store-csharp/stargazers
+[issues-shield]: https://img.shields.io/github/issues/claudiamunteanu/shows-ticket-store-csharp.svg?style=for-the-badge
+[issues-url]: https://github.com/claudiamunteanu/shows-ticket-store-csharp/issues
+[license-shield]: https://img.shields.io/github/license/claudiamunteanu/shows-ticket-store-csharp.svg?style=for-the-badge
+[license-url]: https://github.com/claudiamunteanu/shows-ticket-store-csharp/blob/master/LICENSE
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/claudiamunteanu
 [SQLite.org]: https://img.shields.io/badge/sqlite-%2307405e.svg?style=for-the-badge&logo=sqlite&logoColor=white
