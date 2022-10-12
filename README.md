@@ -86,6 +86,8 @@ Simple client-server desktop application for a ticket store. This is the .NET ve
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
+<img src="screenshot.jpg" alt="Desktop Application" width = "80%"/>
+
 The user creates an account if he doesn't have one and then logs into it. There, he can view a list of all of the shows, he can filter them by date and he can buy tickets for one of those filtered shows.
 
 The project also contains a simple REST client, which requires the REST server from the Java version of this project, which you can find [here](https://github.com/claudiamunteanu/shows-ticket-store-csharp)
