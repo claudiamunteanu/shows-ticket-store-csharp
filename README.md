@@ -36,7 +36,7 @@
   </a>
 -->
 # Ticket Store
-Simple client-server desktop application for a ticket store. This is the C# version of a project created for the "Systems for Design and Implementation" course at my university from my second year.
+Simple client-server desktop application for a ticket store. This is the .NET version of a project created for the "Systems for Design and Implementation" course at my university from my second year.
   <!--
   <p align="center">
     Simple CRUD mobile application for the management of a store's products, created for the "Mobile Application Programming" course at my university.
@@ -107,10 +107,9 @@ To get a local copy up and running follow these simple steps.
 
 ### Prerequisites
 
-* [IntelliJ][IntelliJ-url]
+* [Rider][Rider-url]
+* [.Net][.Net-url]
 * [SQLite][SQLite-url]
-* [React][React-url]
-* [NPM][NPM-url]
 * [SQLite Studio](https://sqlitestudio.pl/)
 
 ### Setup and build
@@ -122,19 +121,14 @@ To get a local copy up and running follow these simple steps.
    
 ### Running
 
-To run the desktop version:
-1. Deploy and run the `AppServer` module using either the `StartProtobuffServer` class or the `StartRpcServer` class
-2. Deploy and run the `AppClient` module. You must use the same protocol as the server: if you ran the protobuff server, use the `StartProtobuffClient` class. If you ran the RPC server, use the `StartRpcClient` class.
+To run the project on your computer:
+1. Deploy and run the `server` module
+2. Deploy and run the `client` module.
 
-To run the web version:
-1. Deploy and run the `RestServices` module using the `StartRestServices` class.
-   * If you wish, you can test that the server is running correctly by running the `StartRestClient` class.
-2. In the terminal, go to inside the `app-rest-client` folder. Then, deploy and run following command:
-   ```
-    npm start
-   ```
+To run the REST client:
+* Deploy and run the `RestClient` module
 
-If you wish, you can modify the database at any time using SQLite Studio, where you can manage the shows (which you can also manage using the web application), the users or the tickets.
+If you wish, you can modify the database at any time using SQLite Studio, where you can manage the shows, the users or the tickets.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -185,7 +179,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 Munteanu Claudia-Maria - Linkedin: [claudiamunteanu][linkedin-url]
 
-Project Link: [https://github.com/claudiamunteanu/shows-tickets-store-java](https://github.com/claudiamunteanu/shows-tickets-store-java)
+Project Link: [https://github.com/claudiamunteanu/shows-tickets-store-csharp](https://github.com/claudiamunteanu/shows-tickets-store-csharp)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
